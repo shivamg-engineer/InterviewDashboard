@@ -1,0 +1,36 @@
+--------------------------------------------
+Static Rendering
+--------------------------------------------
+
+Static rendering means the page is generated at build time and served as ready HTML to users. The content does not change for every request. Since the HTML is already prepared, the page loads very fast and is SEO friendly.
+
+Example:
+Blog posts, documentation pages, landing pages.
+
+---------------------------------------------
+Dynamic Rendering
+----------------------------------------------
+
+Dynamic rendering means the page is generated on the server for each request. The content can change depending on user data, API responses, or request parameters.
+
+Example:
+User dashboards, profile pages, shopping carts.
+
+When to Use Each
+
+Use Static Rendering when:
+
+Content does not change frequently
+
+Performance and SEO are important
+
+Same content is shown to all users
+
+----------------------------------------------
+Use Dynamic Rendering when:
+-----------------------------------------------
+Content changes frequently
+
+Data depends on the user
+
+Real-time or personalized data is required

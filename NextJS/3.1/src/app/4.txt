@@ -1,0 +1,61 @@
+4. Match HTTP Status Codes with Their SEO Impact
+Create a list of status codes: 200, 301, 302, 404, 500. Explain how each one affects SEO.
+Expected Outcome:
+Learner understands that 200 and 301 are SEO-friendly, while 404 and 500 may harm discoverability or indexing.
+-------------------------------------------------------------------------------------
+
+ANS:- 
+
+Here are common HTTP status codes and how they affect SEO:
+
+1. 200 — OK
+
+Meaning: The request was successful and the page loaded correctly.
+
+SEO Impact: This is good for SEO because search engines can crawl and index the page normally.
+
+Example: A blog post or product page that loads successfully returns a 200 status code.
+----------------------
+
+2. 301 — Moved Permanently
+
+Meaning: The page has been permanently moved to a new URL.
+
+SEO Impact: SEO-friendly. Search engines transfer most of the ranking value from the old URL to the new one.
+
+Example: Redirecting oldsite.com/page → newsite.com/page.
+---------------------
+
+3. 302 — Found (Temporary Redirect)
+
+Meaning: The page is temporarily redirected to another URL.
+
+SEO Impact: Not ideal for long-term SEO because search engines may keep the original URL indexed instead of the redirected one.
+
+Example: Temporarily redirecting users during maintenance.
+---------------------
+
+4. 404 — Not Found
+
+Meaning: The requested page does not exist.
+
+SEO Impact: Negative for SEO if it happens frequently. Search engines may remove the page from their index, and too many broken links hurt user experience.
+
+Example: A deleted product page with no redirect.
+------------------------
+
+5. 500 — Internal Server Error
+
+Meaning: Something went wrong on the server while processing the request.
+
+SEO Impact: Bad for SEO if persistent. Search engines cannot access the page, which may reduce crawling and indexing of the site.
+
+Example: A server crash or misconfigured backend causing pages to fail loading.
+
+✅ Summary:
+
+Good for SEO: 200, 301
+
+Use carefully: 302
+
+Harmful if frequent: 404, 500

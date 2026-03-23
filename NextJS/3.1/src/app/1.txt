@@ -1,0 +1,11 @@
+1. Define the Purpose of SEO
+Write a short paragraph explaining what SEO is and why it matters for a modern web application. Include at least two real-world benefits.
+Expected Outcome:
+Learner articulates SEO as a way to improve visibility in search engines and attract organic traffic.
+
+Ans:-
+Search Engine Optimization (SEO) is the practice of improving a website or web application so that it appears higher in search engine results (like Google or Bing). 
+It involves optimizing content, structure, performance, and metadata so search engines can easily understand and index the site. 
+SEO matters for modern web applications because it helps users discover the product organically without relying only on paid advertising. 
+For example, good SEO can increase organic traffic by making the site appear in relevant searches, and it can improve user trust and credibility, since users often trust websites that rank higher in search results. 
+These benefits help businesses reach more users and grow their online presence.

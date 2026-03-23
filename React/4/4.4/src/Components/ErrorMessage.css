@@ -1,0 +1,8 @@
+/* can live in UserComponent.css or a shared css file */
+.error-box {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}

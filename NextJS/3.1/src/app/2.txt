@@ -1,0 +1,21 @@
+2. List and Explain Three Search Engine Processes
+Identify and describe crawling, indexing, and ranking. Use simple language or real-world comparisons.
+Expected Outcome:
+Clear understanding that crawling is discovery, indexing is storage, and ranking is ordering results.
+
+
+Ans:- 
+Search engines use three main processes to show the best results to users: crawling, indexing, and ranking.
+
+1. Crawling (Discovery)
+Crawling is the process where search engines send automated programs called crawlers or bots to discover web pages on the internet. 
+These bots move from one page to another by following links, similar to how a person browses different pages by clicking links. 
+In simple terms, crawling is like a librarian walking through a library to find new books.
+
+2. Indexing (Storage)
+After a page is discovered, the search engine analyzes its content (text, images, keywords, structure) and stores important information in a massive database called the index. 
+This step helps the search engine remember what the page is about. It’s similar to a library catalog system where each book is recorded so it can be found quickly later.
+
+3. Ranking (Ordering Results)
+When a user searches for something, the search engine looks through its index and decides which pages are the most relevant and useful. 
+It then orders these pages in the search results from most relevant to least relevant. This is called ranking. Think of it like a librarian recommending the best books on a topic first.

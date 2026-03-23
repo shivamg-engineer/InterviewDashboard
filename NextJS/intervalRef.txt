@@ -1,0 +1,160 @@
+ const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  const startIncrement = () => {
+    intervalRef.current = setInterval(() => {
+      setCount((prev) => prev + 1);
+    }, 100);
+  };
+
+  const startDecrement = () => {
+    intervalRef.current = setInterval(() => {
+      setCount((prev) => prev - 1);
+    }, 100);
+  };
+
+  const stopCounter = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };//explain this code
+
+Let’s break down this code step-by-step. It is used to increase or decrease the counter continuously while the button is pressed.
+
+1️⃣ useRef for storing interval
+const intervalRef = useRef<NodeJS.Timeout | null>(null);
+What it does
+
+useRef stores a mutable value that persists across renders.
+
+Here it stores the ID of the interval created by setInterval().
+
+Why we use useRef
+
+If we used a normal variable:
+
+let interval;
+
+React would reset it on every render.
+
+But useRef keeps the same value.
+
+Structure
+intervalRef
+   ↓
+{
+  current: intervalID
+}
+2️⃣ Start Increment Function
+const startIncrement = () => {
+  intervalRef.current = setInterval(() => {
+    setCount((prev) => prev + 1);
+  }, 100);
+};
+What happens
+
+When the button is pressed:
+
+setInterval() starts running every 100ms
+
+Each time it runs → setCount increases the count.
+
+Flow:
+
+Button press
+     ↓
+setInterval starts
+     ↓
+every 100ms
+     ↓
+count + 1
+
+Example:
+
+0 → 1 → 2 → 3 → 4 → ...
+Why store in intervalRef.current
+
+Because setInterval returns an interval ID.
+
+intervalID = setInterval(...)
+
+We store it so we can stop the interval later.
+
+3️⃣ Start Decrement Function
+const startDecrement = () => {
+  intervalRef.current = setInterval(() => {
+    setCount((prev) => prev - 1);
+  }, 100);
+};
+
+Same logic, but it decreases the count.
+
+Example:
+
+5 → 4 → 3 → 2 → 1 → ...
+4️⃣ Stop Counter Function
+const stopCounter = () => {
+  if (intervalRef.current) {
+    clearInterval(intervalRef.current);
+  }
+};
+What it does
+
+Stops the running interval.
+
+Flow:
+
+Button released
+      ↓
+clearInterval(intervalID)
+      ↓
+interval stops
+
+Without this, the counter would keep running forever.
+
+5️⃣ Full Flow in UI
+
+When using events like:
+
+onMouseDown → startIncrement
+onMouseUp → stopCounter
+
+Behavior:
+
+Press button
+     ↓
+setInterval starts
+     ↓
+count changes continuously
+     ↓
+Release button
+     ↓
+clearInterval
+     ↓
+counter stops
+6️⃣ Why setCount(prev => prev + 1) is used
+setCount((prev) => prev + 1);
+
+This ensures we always get the latest state.
+
+Bad approach:
+
+setCount(count + 1)
+
+Because React state updates are asynchronous.
+
+7️⃣ Visual Summary
+useRef → store interval ID
+        ↓
+setInterval → update count every 100ms
+        ↓
+clearInterval → stop the updates
+
+✅ Key React concepts used here
+
+useRef
+
+setInterval
+
+clearInterval
+
+Functional state update

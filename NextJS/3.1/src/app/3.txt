@@ -1,0 +1,26 @@
+3. Inspect the HTML Output of a Next.js Page
+Open any page in a browser built with Next.js. Use "View Page Source" and DevTools to identify if content is rendered on the server.
+Expected Outcome:
+Learner identifies that content is rendered in HTML and is accessible for crawlers.
+
+ANS: - 
+
+To inspect the HTML output of a Next.js page, follow these steps:
+
+1. Open the Next.js page in your browser
+Navigate to any page of the application running in the browser.
+
+2. View Page Source
+Right-click on the page and select “View Page Source” (or press Ctrl + U). 
+This shows the raw HTML that the browser receives from the server.
+
+3. Check for rendered content
+Look inside the HTML for visible page content such as headings, text, or lists. 
+If the content (for example <h1>Products</h1> or product names) is already present in the HTML source, it means the page was rendered on the server.
+
+4. Use DevTools for confirmation
+Open Developer Tools (F12) → go to the Elements tab. 
+Here you can inspect the DOM and confirm that the content appears immediately without requiring JavaScript to generate it.
+
+Conclusion:
+If the main page content is visible in the initial HTML source, it means the page is server-rendered, which is beneficial for search engine crawlers because they can easily read and index the content.
